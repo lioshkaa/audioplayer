@@ -1,0 +1,177 @@
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: Helvetica, Arial;
+  margin: 0;
+  overflow: hidden;
+  background-color: #ffeff5;
+}
+audio {
+  display: none;
+}
+.audio-track {
+  width: 400px;
+  height: 3px;
+  background-color: #dddddd;
+  margin: 30px 0;
+}
+
+.time {
+  width: 0%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #474747;
+}
+.wrpapper {
+  display: block;
+  background-color: white;
+  width: 400px;
+  margin: 100px auto;
+  height: 400px;
+  box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+.prev {
+  margin-right: 20px;
+}
+.next {
+  margin-left: 20px;
+}
+.prev,
+.next {
+  background-color: #f1f1f1;
+  color: black;
+  padding: 8px 16px;
+}
+.prev:hover,
+.next:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+.pause {
+  transform: rotate(90deg);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.play {
+  background-color: #f1f1f1;
+  color: black;
+  padding: 10px 16px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.play:hover,
+.pause:hover{
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+.round {
+  border: none;
+  border-radius: 50%;
+}
+.contols-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.stage {
+  position: relative;
+  width: 100%;
+  height: 790px;
+  overflow: hidden;
+  background: steelblue;
+  box-shadow: 0 -400px 300px -300px orangered inset;
+  animation: sky-change 15s infinite linear;
+}
+
+.sun {
+  position: absolute;
+  left: 0;
+  bottom: -30%;
+  width: 10em;
+  height: 10em;
+  margin-left: -2.5em;
+  margin-top: 0;
+  background: orangered;
+  border-radius: 50%;
+  box-shadow: 0 0 20px orange;
+  animation: 15s infinite linear;
+  animation-name: sun-move, sun-color;
+}
+@keyframes sky-change {
+  0% {
+    background: darkslateblue;
+  }
+  50% {
+    background: skyblue;
+    box-shadow: 0 -400px 300px -300px steelblue inset;
+  }
+  85% {
+    background: darkslateblue;
+    box-shadow: 0 -400px 300px -300px orangered inset;
+  }
+  100% {
+    background: darkslateblue;
+  }
+}
+@keyframes sun-move {
+  0% {
+  }
+  10% {
+    margin-left: -4.5em;
+  }
+  20% {
+    margin-left: -5.5em;
+  }
+  30% {
+    margin-left: -6em;
+  }
+  40% {
+    margin-left: -4.5em;
+  }
+  50% {
+    left: 50%;
+    bottom: 75%;
+    width: 5em;
+    height: 5em;
+    margin-left: -2.5em;
+  }
+  60% {
+    margin-left: 1.5em;
+  }
+  70% {
+    margin-left: 3.5em;
+  }
+  80% {
+    margin-left: 2.5em;
+  }
+  90% {
+    margin-left: 1em;
+  }
+  100% {
+    left: 98%;
+    margin-left: -2.5em;
+  }
+}
+@keyframes sun-color {
+  20% {
+    background: orange;
+  }
+  40% {
+    background: gold;
+    box-shadow: 0 0 35px gold;
+  }
+  60% {
+    background: yellow;
+    box-shadow: 0 0 35px yellow;
+  }
+  80% {
+    background: orange;
+  }
+}

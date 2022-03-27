@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Калькулятор</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+    <main class="main">
+      <div class="stage">
+        <div class="sun"></div>
+        <div class="grass"></div>
+        <div class="square"></div>
+        <div class="round"></div>
+        <audio id="audio" src="audio/chelik.mp3" controls></audio>
+        <div class="wrpapper">
+          <div class="audio-photo">
+            <img
+              src="https://st3.depositphotos.com/4252389/18503/i/600/depositphotos_185036534-stock-photo-chisinau-moldova-october-11-2017.jpg"
+              class="imageList"
+              height="250px"
+              width="400px"
+            />
+          </div>
+          <div id="controls">
+            <div class="audio-track"><div class="time"></div></div>
+            <div class="contols-center">
+              <button class="prev round">&laquo;</button>
+              <button class="play round">&#10148;</button>
+              <button class="pause round">&#61;</button>
+              <button class="next round">&raquo;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
